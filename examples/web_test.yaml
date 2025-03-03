@@ -1,0 +1,6 @@
+services:
+  - name: web
+    listen: localhost:8080
+    remote: example.com:80
+    network:
+      type: tcp

@@ -1,0 +1,13 @@
+services:
+  - name: mc_server
+    listen: localhost:25565
+    remote: minecraft-server.com:25565
+    network:
+      type: tcp
+
+  - name: mc_server_with_haproxy
+    listen: localhost:25575
+    remote: minecraft-server.com:25565
+    network:
+      type: tcp
+      send_proxy: true
