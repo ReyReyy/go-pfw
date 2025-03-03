@@ -147,15 +147,15 @@ func printHelp() {
 	fmt.Printf(`Port Forward Tool %s - Usage:
 
 Options:
-  -c, --config <path>     配置文件路径
-  -l, --listen <addr>     监听地址 (无配置文件时必需)
-  -r, --remote <addr>     目标地址 (无配置文件时必需)
-  -n, --type <type>       网络类型 [tcp|udp|both] (默认tcp)
-      --send_proxy        启用发送PROXY协议
-      --accept_proxy      接受PROXY协议
-  -d, --debug             调试模式
-  -h, --help              显示帮助
-  -v, --version           显示版本
+  -c, --config <path>     Config file mode
+  -l, --listen <addr>     Listen address
+  -r, --remote <addr>     Remote address
+  -n, --type <type>       Network type
+      --send_proxy        Send HAProxy
+      --accept_proxy      Accept HAProxy
+  -d, --debug             Debug mode
+  -h, --help              Show help
+  -v, --version           Show version
 
 `, Version)
 	os.Exit(0)
